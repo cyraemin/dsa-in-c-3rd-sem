@@ -36,7 +36,7 @@ void myStrcat(char *d, char *s)
         s++;
     }
     *d = '\0';
-}
+  }
 
 int main()
 {

@@ -55,4 +55,4 @@ int main()
     printf("\nMultiplication = %d feet %d inches", mul.feet, mul.inches);
 
     return 0;
-}
+  }
