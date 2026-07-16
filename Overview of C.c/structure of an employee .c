@@ -40,4 +40,4 @@ int main()
     printf("Salary: %.2f\n", emp[max].salary);
 
     return 0;
-  }
+}
