@@ -53,7 +53,7 @@ void del()
 	}
 	else if(front == rear)//only one element in Queue
 	{
-		printf('Deleted element is %d: \n', cqueue[front]);
+		printf("Deleted element is %d: \n", cqueue[front]);
     front=-1;
     rear=-1;
 	}
@@ -61,12 +61,12 @@ void del()
   {
     		if(front==size-1)
 				{
-					printf('Deleted element is %d: \n', cqueue[front]);
+					printf("Deleted element is %d: \n", cqueue[front]);
           front=0;
 				}
 				else
 				{
-					printf('Deleted element is %d: \n', cqueue[front]);
+					printf("Deleted element is %d: \n", cqueue[front]);
           front++;
 				}
   }
