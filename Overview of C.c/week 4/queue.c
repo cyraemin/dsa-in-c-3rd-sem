@@ -9,16 +9,16 @@ void display();
 int main()
 {
 	display();
-	push(10);
-	push(20);
-	push(30);
-	push(40);
-    push(50);
-	printf("\nElements of stack are:\n");
+	insert(10);
+	insert(20);
+	insert(30);
+	insert(40);
+  insert(50);
+	printf("\nElements of queue are:\n");
 	display();
-	push(60);
-	pop();
-	printf("\nElements of stack are:\n");
+	insert(60);
+	del();
+	printf("\nElements of queue are:\n");
 	display();
 	return 0;
 }
@@ -45,21 +45,27 @@ void del()
 	{
 		printf("Queue is EMPTY or UNDERFLOW");
 	}
-	else
+	else if(front == rear)//only one element in Queue
 	{
-		printf("\npoped item is %d\n",stack[top]);
-		top--;
+		printf('Deleted element is %d: \n', queue[front]);
+    front=-1;
+    rear=-1;
 	}
+  else
+  {
+    		printf('Deleted element is %d: \n', queue[front]);
+        front++;
+  }
 }
 void display()
 {
-	if(top == -1) //stack is empty or not
+	if(front == -1) //Queue is empty or not
 	{
-		printf("Stack is EMPTY or UNDERFLOW");
+		printf("Queue is EMPTY or UNDERFLOW");
 	}
 	else
 	{
-		for(int i=0;i<=top;i++)
-			printf("%d ",stack[i]);
+		for(int i=front;i<=rear;i++)
+			printf("%d ",queue[i]);
 	}
 }
