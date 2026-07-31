@@ -24,7 +24,7 @@ int main()
     if (add.inches >= 12)
     {
         add.feet++;
-        add.inches -= 12;
+        add.inches -= 12;hg
     }
 
     // Subtraction
